@@ -12,4 +12,6 @@ body {
     background: $background-gradient;
     text-align: center;
     box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box
 }
