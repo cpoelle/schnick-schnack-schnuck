@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 const Play = ({ setChoice }) => {
   const setMyChoice = (e) => {
     setChoice(e.target.dataset.id);
-    console.log(e.target.dataset.id);
   };
 
   return (
-    <div className="play">
+    <div>
       <Link to="/match">
         <div data-id="paper" onClick={setMyChoice} className="icon icon--paper">
           Paper

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 const Match = (props) => {
   const [opponentsChoice, setOpponentChoice] = useState("");
@@ -45,16 +46,18 @@ const Match = (props) => {
   }, [opponentsChoice]);
   console.log(props.score);
   return (
-    <div className="match">
-      My Choice: {props.choice} <br />
-      Opponents Choice: {opponentsChoice} <br />
-      Result:
-      {playerWin === "win" && <h2>You win!</h2>}
-      {playerWin === "lose" && <h2>You lose!</h2>}
-      {playerWin === "draw" && <h2>Draw!</h2>}
-      <Link to="/" onClick={() => setOpponentChoice("")}>
-        Play again
-      </Link>
+    <div>
+      Du: {props.choice} <br />
+      Gegner: {opponentsChoice} <br />
+      Ergebnis:
+      {playerWin === "win" && <h2>Gewonnen!</h2>}
+      {playerWin === "lose" && <h2>Verloren!</h2>}
+      {playerWin === "draw" && <h2>Unentschieden!</h2>}
+      <Button variant="contained">
+        <Link to="/" onClick={() => setOpponentChoice("")}>
+          Play again
+        </Link>
+      </Button>
     </div>
   );
 };
