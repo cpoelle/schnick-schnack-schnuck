@@ -1,6 +1,6 @@
-# rps_react
+# Rock Paper Scissor Game
 
-Rock-Paper-Scissor Game.
+This is a training project for learning und practice react functionalities. In the next days i will continue to implement the UI with [MaterialUI](https://mui.com/core/) and add extra features/hooks like useContext to keep on practizing. 
 
 ## Building and running on localhost
 
@@ -21,10 +21,6 @@ To create a production build:
 ```sh
 npm run build-prod
 ```
-
-## Running
-
-Open the file `dist/index.html` in your browser
 
 ## Credits
 
