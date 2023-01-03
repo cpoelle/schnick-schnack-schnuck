@@ -2,6 +2,12 @@
 
 This is a training project for learning und practice react functionalities. In the next days i will continue to implement the UI with [MaterialUI](https://mui.com/core/) and add extra features/hooks like useContext to keep on practizing. 
 
+Open Tasks: 
+- Implement Material UI
+- handle global state management with useContext
+- Add Animations and transitions to better UX
+
+
 ## Building and running on localhost
 
 First install dependencies:
